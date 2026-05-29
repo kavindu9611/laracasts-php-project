@@ -2,6 +2,18 @@
 
 require 'functions.php';
 
-$heading = "Home";
+$uri = parse_url($_SERVER['REQUEST_URI'])['path'];
 
-require "views/index.view.php";
+if ($uri === '/laracasts-php-project/') {
+
+    require 'controllers/index.php';
+
+} else if ($uri === '/laracasts-php-project/about') {
+
+    require 'controllers/about.php';
+
+} else if ($uri === '/laracasts-php-project/contact') {
+
+    require 'controllers/contact.php';
+
+}
