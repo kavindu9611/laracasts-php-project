@@ -2,11 +2,15 @@
 
 require 'functions.php';
 require 'Database.php';
-// require 'router.php';
-$config = require('config.php');
+require 'router.php';
 
-$db = new Database($config['database']);
-$posts = $db->query("select * from posts")->fetch(PDO::FETCH_ASSOC);
+
+
+// $id = $_GET['id'];
+// $query = "select * from posts where id = :id";
+// $posts = $db->query($query, ['id'=>$id])->fetch();
+
+
 
 // foreach ($posts as $post) {
 //     echo "<li>" . $post['title'] . "</li>";
