@@ -7,7 +7,7 @@
         <p class="mb-6">
             <a href="/laracasts-php-project/notes" class="text-blue-500 underline">go back...</a>
         </p>
-            <p><?= $note['body'] ?></p>
+            <p><?= htmlspecialchars($note['body']) ?></p>
     </div>
 </main>
 
