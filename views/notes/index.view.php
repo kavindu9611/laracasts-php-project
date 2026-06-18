@@ -7,7 +7,7 @@
         <ul>
             <?php foreach ($notes as $note) : ?>
                 <li>
-                    <a href="/laracasts-php-project/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
+                    <a href="/note?id=<?= $note['id'] ?>" class="text-blue-500 hover:underline">
                         <?= htmlspecialchars($note['body']) ?>
                     </a>
                 </li>
@@ -15,7 +15,7 @@
         </ul>
 
         <p class="mt-6">
-           <a href="/laracasts-php-project/notes/create" class="text-blue-500 hover:underline">Create Note</a> 
+           <a href="/notes/create" class="text-blue-500 hover:underline">Create Note</a> 
         </p>
     </div>
 </main>
